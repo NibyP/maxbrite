@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+	position: relative;
+    left: -22%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: 720px;
+}
+
+/* Add some content at the bottom of the video/page */
+#content {
+  bottom: 0;
+  color: #f1f1f1;
+}
+#sidebar h3{
+	color: red;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+}
+#sidebar p{
+	display: block;
+    padding-top: 20px;
+    text-align: center;
+	
+}
+#sidebarCollapse{
+	display:none;
+}
+@media only screen and (max-width: 600px) {
+	#myVideo {
+    left: 0;
+	min-width: 85%;
+    min-height: 51%;
+    height: 620px;
+	z-index: -1;
+	}
+	#sidebarCollapse{
+		position: absolute;
+		display: block;
+	}
+}
+		</style>
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 " style="background: #000d73;">
+				  <a href="#" class="img logo " style="background-image: url(images/logo.png);" ></a>
+				  <h3>Max Brite Trading Company</h3><p>AVATHIL, KOLLAM</p>
+				</div>
+				  <div class="p-4 pt-5" style="background-image: url(images/bg.webp);background-size: contain;">
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+	           
+	          </li>
+	          <li>
+	              <a href="#">Managing Directors Message</a>
+	          </li>
+			  <li>
+				<a href="#">Company Profile</a>
+			  </li>
+			  <li>
+				<a href="#">Product Details</a>
+			</li>
+			<li>
+				<a href="#">Future Products</a>
+			</li>
+			<li>
+				<a href="#">Videos</a>
+			</li>
+			<li>
+				<a href="#">Images</a>
+			</li>
+			<li>
+				<a href="#">Latest News</a>
+			</li>
+			<li>
+				<a href="#">Feedback Page</a>
+			</li>
+			<li>
+				<a href="#">Recruitment Page</a>
+			</li>
+			<li>
+				<a href="#">Contact us and Branches</a>
+			</li>
+			<li>
+				<a href="#">Our Team</a>
+			</li>
+			
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">MaxBrite</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="">
+
+		<button type="button " id="sidebarCollapse" class="btn btn-primary">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle Menu</span>
+		  </button>
+
+		<video autoplay muted loop id="myVideo">
+			<source src="images/videobg.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
